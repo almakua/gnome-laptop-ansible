@@ -1,0 +1,28 @@
+- name: Install python-psutil package
+  apt: name=python-psutil
+
+- name: Copy wallpaper file
+  copy: src=files/wallpaper.jpg dest=/home/marco/.wallpaper.jpg owner=marco group=marco mode=600
+
+- name: Set GNOME Wallpaper
+  become_user: marco
+  dconf: key="/org/gnome/desktop/background/picture-uri" value="'file:///home/marco/.wallpaper.jpg'"
+
+- name: Copy lockscreenfile
+  copy: src=files/lockscreen.jpg dest=/home/marco/.lockscreen.jpg owner=marco group=marco mode=600
+
+- name: Set lock screen background
+  become_user: marco
+  dconf: key="/org/gnome/desktop/screensaver/picture-uri" value="'file:///home/marco/.lockscreen.jpg'"
+
+- name: Set GTK theme
+  become_user: marco
+  dconf: key="/org/gnome/desktop/interface/gtk-theme" value="'Numix'"
+
+- name: Set icons theme
+  become_user: marco
+  dconf: key="/org/gnome/desktop/interface/icon-theme" value="'Numix-Circle'"
+
+- name: Set cursor theme
+  become_user: marco
+  dconf: key="/org/gnome/desktop/interface/cursor-theme" value="'Whiteglass'"
