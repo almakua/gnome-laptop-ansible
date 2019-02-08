@@ -15,4 +15,5 @@
       - timeshift
       - exfat-fuse
       - exfat-utils
-      
+      - python3-pip
+      - adb
