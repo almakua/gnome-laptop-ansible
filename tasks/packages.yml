@@ -1,0 +1,14 @@
+  - name: Install packages
+    apt: name={{item}}
+    with_items:
+      - htop
+      - mc
+      - tmux
+      - iotop
+      - iftop
+      - wireshark
+      - terminator
+      - unzip
+      - zip
+      - ubuntu-restricted-extras
+      - vim
