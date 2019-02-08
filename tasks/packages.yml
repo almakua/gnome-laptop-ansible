@@ -17,3 +17,6 @@
       - exfat-utils
       - python3-pip
       - adb
+      - gnome-tweaks
+      - numix-gtk-theme 
+      - numix-icon-theme*
