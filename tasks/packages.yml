@@ -12,3 +12,7 @@
       - zip
       - ubuntu-restricted-extras
       - vim
+      - timeshift
+      - exfat-fuse
+      - exfat-utils
+      
