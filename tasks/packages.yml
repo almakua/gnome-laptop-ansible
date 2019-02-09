@@ -27,7 +27,7 @@
 # install packages from internet
   - name: Install a .deb package from the internet
     apt: deb={{ item }}
-      with_items: 
+    with_items: 
       - https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2019.01.31_amd64.deb
       - https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
       - https://releases.hashicorp.com/vagrant/2.2.3/vagrant_2.2.3_x86_64.deb
