@@ -21,9 +21,13 @@
       - numix-gtk-theme 
       - numix-icon-theme*
       - arc-theme
+      - evince
+      - eog
 
 # install packages from internet
 - name: Install a .deb package from the internet.
   apt:
     deb: https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2019.01.31_amd64.deb
     deb: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    deb: https://releases.hashicorp.com/vagrant/2.2.3/vagrant_2.2.3_x86_64.deb
+    deb: https://steamcdn-a.akamaihd.net/client/installer/steam.deb
