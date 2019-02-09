@@ -1,25 +1,7 @@
-# Install snap packages
-- name: Install Snaps
-  snap:
-    name:
-      - gnome-calculator
-      - gnome-calendar
-      - spotify
-      - telegram-desktop
-      - thunderbird
-      - tusk
-      - vlc
+# task workaround until 2.9 so ansible can use snap module
+- name: install Snaps
+  command: snap install gnome-calculator gnome-calendar spotify telegram-desktop thunderbird tusk vlc
 
-# Install a snap with classic confinement
-- name: Install Android Studio with option --classic
-  snap:
-    name: android-studio
-    classic: yes
-- name: Install Slack with option --classic
-  snap:
-    name: android-studio
-    classic: yes
-- name: Install VSCode with option --classic
-  snap:
-    name: android-studio
-    classic: yes
+- name: install Snaps that need classic
+  command: snap install slack android-studio vscode --classic
+
