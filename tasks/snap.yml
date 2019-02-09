@@ -1,20 +1,25 @@
 # Install snap packages
 - name: Install Snaps
-  snap: name={{item}}
-  with_items:
-    - gnome-calculator
-    - gnome-calendar
-    - spotify
-    - telegram-desktop
-    - thunderbird
-    - tusk
-    - vlc
+  snap:
+    name:
+      - gnome-calculator
+      - gnome-calendar
+      - spotify
+      - telegram-desktop
+      - thunderbird
+      - tusk
+      - vlc
 
 # Install a snap with classic confinement
-- name: Install Snaps with option --classic
-  snap: name={{item}} classic:yes
-  with_items:
-    - android-studio
-    - slack
-    - vscode
-    
+- name: Install Android Studio with option --classic
+  snap:
+    name: android-studio
+    classic: yes
+- name: Install Slack with option --classic
+  snap:
+    name: android-studio
+    classic: yes
+- name: Install VSCode with option --classic
+  snap:
+    name: android-studio
+    classic: yes
