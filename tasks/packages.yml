@@ -23,6 +23,7 @@
       - arc-theme
       - evince
       - eog
+      - libreoffice-l10n-it
 
 # install packages from internet
   - name: Install a .deb package from the internet
