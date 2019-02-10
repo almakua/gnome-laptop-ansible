@@ -5,6 +5,11 @@
 - name: install thunderbird beta
   command: snap install thunderbird --channel beta
 
-- name: install Snaps that need classic
-  command: snap install slack android-studio vscode --classic
+- name: install slack --classic
+  command: snap install slack --classic
 
+- name: install android-studio --classic
+  command: snap install android-studio --classic
+
+- name: install vscode --classic
+  command: snap install vscode --classic
