@@ -10,4 +10,6 @@ ansible-pull -U https://github.com/almakua/ansible.git
 dconf dump / > gconf.txt
 
 TO DO:
-* popcorn-time
+* albert
+* porting firefox configuration
+* porting application configuration (dropbox mailny, so it download directly after installing it)
