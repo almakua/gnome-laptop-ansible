@@ -1,9 +1,15 @@
 # install additional repositories
 
+# download albert key
+- name: download albert repo key
+  get_url: 
+    url: https://download.opensuse.org/repositories/home:manuelschneid3r/xUbuntu_18.10/Release.key
+    dest: /tmp/Release.key
+
 # install albert key
 - name: Add an Apt signing key, uses whichever key is at the URL
   apt_key:
-    url: https://download.opensuse.org/repositories/home:manuelschneid3r/xUbuntu_18.10/Release.key
+    file: /tmp/Release.key
     state: present
 
 # install albert repo
