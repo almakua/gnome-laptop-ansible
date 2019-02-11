@@ -1,15 +1,14 @@
 # task workaround until 2.9 so ansible can use snap module
-- name: install Snaps
-  command: snap install gnome-calculator gnome-calendar spotify telegram-desktop tusk vlc
-
-- name: install thunderbird beta
-  command: snap install thunderbird --channel beta
-
-- name: install slack --classic
-  command: snap install slack --classic
-
-- name: install android-studio --classic
-  command: snap install android-studio --classic
-
-- name: install vscode --classic
-  command: snap install vscode --classic
+- name: install snaps via script
+  command: bash files/insatll_snaps.sh {{item}}
+  with_items:
+    - gnome-calculator
+    - gnome-calendar
+    - spotify
+    - telegram-desktop
+    - thunderbird
+    - tusk
+    - vlc
+    - slack
+    - android-studio
+    - vscode
