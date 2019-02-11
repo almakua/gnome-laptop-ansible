@@ -6,8 +6,8 @@
       changed_when: False
 
   tasks:
-    - include: tasks/upgrade.yml
     - include: tasks/repos.yml
+    - include: tasks/upgrade.yml
     - include: tasks/packages.yml
     - include: tasks/snap.yml
     - include: tasks/user.yml
