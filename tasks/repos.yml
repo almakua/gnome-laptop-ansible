@@ -19,3 +19,8 @@
     state: present
     filename: albert
     update_cache: yes
+    
+# install timeshift ppa
+- name: Install Timeshift PPA
+  apt_repository:
+    repo: ppa:nginx/stable
