@@ -26,6 +26,7 @@
       - libreoffice-l10n-it
       - albert
       - thunderbird
+    update_cache: yes
 
 # install packages from internet
   - name: Install a .deb package from the internet
