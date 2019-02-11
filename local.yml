@@ -10,6 +10,7 @@
     - include: tasks/upgrade.yml
     - include: tasks/packages.yml
     - include: tasks/snap.yml
+    - include: tasks/install_zip.yml
     - include: tasks/user.yml
     - include: tasks/cron.yml
     - include: tasks/gnome.yml
