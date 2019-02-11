@@ -23,5 +23,5 @@
 # install timeshift ppa
 - name: Install Timeshift PPA
   apt_repository:
-    repo: ppa:nginx/stable
+    repo: ppa:teejee2008/ppa
     update_cache: yes
