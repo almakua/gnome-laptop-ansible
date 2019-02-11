@@ -25,6 +25,7 @@
       - eog
       - libreoffice-l10n-it
       - albert
+      - thunderbird
 
 # install packages from internet
   - name: Install a .deb package from the internet
