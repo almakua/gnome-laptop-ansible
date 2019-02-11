@@ -13,3 +13,4 @@ dconf dump / > gconf.txt
 * porting firefox configuration
 * porting application configuration (dropbox mailny, so it download directly after installing it)
 * popcorntime
+* copiare icona di evernote, e cambiare .desktop di tusk
