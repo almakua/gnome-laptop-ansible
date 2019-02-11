@@ -1,6 +1,6 @@
 # task workaround until 2.9 so ansible can use snap module
 - name: install snaps via script
-  command: bash files/insatll_snaps.sh {{item}}
+  command: bash files/install_snaps.sh {{item}}
   with_items:
     - gnome-calculator
     - gnome-calendar
