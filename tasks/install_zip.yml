@@ -6,6 +6,12 @@
     dest: /opt/terraform/
     remote_src: yes
 
+- name: Crete Terraform Directory
+  file:
+    path: /opt/terraform
+    state: directory
+    mode: 0755
+
 - name: Link terraform into path
   file:
     src: '/opt/terraform/terraform'
@@ -19,6 +25,12 @@
     src: http://mirror03.popcorntime.sh/repo/build/Popcorn-Time-0.3.10-Linux-64.tar.xz
     dest: /opt/Popcorn-Time/
     remote_src: yes
+
+- name: Crete Popcorntime Directory
+  file:
+    path: /opt/Popcorn-Time
+    state: directory
+    mode: 0755
 
 - name: Link popcorntime into path
   file:
