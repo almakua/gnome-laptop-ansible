@@ -1,0 +1,8 @@
+[Desktop Entry]
+Version = 1.0
+Type = Application
+Terminal = false
+Name = Popcorn Time
+Exec = /usr/bin/Popcorn-Time
+Icon = /opt/Popcorn-Time/popcorn.png
+Categories = Application;

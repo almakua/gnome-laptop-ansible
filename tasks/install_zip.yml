@@ -1,0 +1,30 @@
+# install terraform
+
+- name: Unarchive terraform
+  unarchive:
+    src: https://releases.hashicorp.com/terraform/0.11.11/terraform_0.11.11_linux_amd64.zip
+    dest: /opt/terraform/
+    remote_src: yes
+
+- name: Link terraform into path
+  file:
+    src: '/opt/terraform/terraform'
+    dest: '/usr/local/bin/terraform'
+    state: link
+
+
+# Install popcorn time
+- name: Unarchive popcorntime
+  unarchive:
+    src: http://mirror03.popcorntime.sh/repo/build/Popcorn-Time-0.3.10-Linux-64.tar.xz
+    dest: /opt/Popcorn-Time/
+    remote_src: yes
+
+- name: Link popcorntime into path
+  file:
+    src: '/opt/Popcorn-Time/Popcorn-Time'
+    dest: '/usr/local/bin/Popcorn-Time'
+    state: link
+
+- name: Copy conf file for gnome desktop application
+  copy: src=files/popcorntime.desktop dest=/usr/share/applications/popcorntime.desktop owner=root group=root mode=600
