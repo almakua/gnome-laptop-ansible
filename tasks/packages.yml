@@ -33,3 +33,12 @@
       - https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
       - https://releases.hashicorp.com/vagrant/2.2.3/vagrant_2.2.3_x86_64.deb
       - https://steamcdn-a.akamaihd.net/client/installer/steam.deb
+
+# install albert
+  - apt_repository:
+    repo: deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_18.10/ /
+    state: present
+  - name: Install albert, after updating cache
+    apt:
+    name: albert
+    update_cache: yes
