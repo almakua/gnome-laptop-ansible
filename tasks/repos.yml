@@ -1,0 +1,9 @@
+# install additional repositories
+
+# install albert repo
+  - name: Install albert repository 
+    apt_repository:
+    repo: 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_18.10/ /'
+    state: present
+    filename: albert
+    update_cache: yes
