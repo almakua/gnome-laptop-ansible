@@ -12,3 +12,4 @@ dconf dump / > gconf.txt
 ## TO DO:
 * porting firefox configuration
 * porting application configuration (dropbox mailny, so it download directly after installing it)
+* popcorntime
