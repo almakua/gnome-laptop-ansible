@@ -12,7 +12,7 @@
       - zip
       - ubuntu-restricted-extras
       - vim
-#      - timeshift
+      - timeshift
       - exfat-fuse
       - exfat-utils
       - python3-pip
