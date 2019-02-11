@@ -1,29 +1,36 @@
+# install albert repository
+  - apt_repository:
+    repo: deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_18.10/ /
+    state: present
+
   - name: Install packages
-    apt: name={{item}}
-    with_items:
-      - htop
-      - mc
-      - tmux
-      - iotop
-      - iftop
-      - wireshark
-      - terminator
-      - unzip
-      - zip
-      - ubuntu-restricted-extras
-      - vim
-#      - timeshift
-      - exfat-fuse
-      - exfat-utils
-      - python3-pip
-      - adb
-      - gnome-tweaks
-      - numix-gtk-theme 
-      - numix-icon-theme*
-      - arc-theme
-      - evince
-      - eog
-      - libreoffice-l10n-it
+      apt: name={{item}}
+      update_cache: yes
+      with_items:
+        - htop
+        - mc
+        - tmux
+        - iotop
+        - iftop
+        - wireshark
+        - terminator
+        - unzip
+        - zip
+        - ubuntu-restricted-extras
+        - vim
+  #      - timeshift
+        - exfat-fuse
+        - exfat-utils
+        - python3-pip
+        - adb
+        - gnome-tweaks
+        - numix-gtk-theme 
+        - numix-icon-theme*
+        - arc-theme
+        - evince
+        - eog
+        - libreoffice-l10n-it
+        - albert
 
 # install packages from internet
   - name: Install a .deb package from the internet
@@ -33,12 +40,3 @@
       - https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
       - https://releases.hashicorp.com/vagrant/2.2.3/vagrant_2.2.3_x86_64.deb
       - https://steamcdn-a.akamaihd.net/client/installer/steam.deb
-
-# install albert
-  - apt_repository:
-    repo: deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_18.10/ /
-    state: present
-  - name: Install albert, after updating cache
-    apt:
-    name: albert
-    update_cache: yes
