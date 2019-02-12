@@ -39,5 +39,8 @@
     dest: '/usr/bin/Popcorn-Time'
     state: link
 
+- name: Copy Popcorntime icon
+  copy: src=files/popcorn.png dest=/opt/Popcorn-Time/popcorn.png owner=root group=root mode=600
+
 - name: Copy conf file for gnome desktop application
   copy: src=files/popcorntime.desktop dest=/usr/share/applications/popcorntime.desktop owner=root group=root mode=600
