@@ -26,6 +26,7 @@
       - libreoffice-l10n-it
       - albert
       - thunderbird
+      - ncdus
     update_cache: yes
 
 # install packages from internet
