@@ -26,7 +26,8 @@
       - libreoffice-l10n-it
       - albert
       - thunderbird
-      - ncdus
+      - ncdu
+      - zeal
     update_cache: yes
 
 # install packages from internet
