@@ -36,7 +36,7 @@
 - name: Link popcorntime into path
   file:
     src: '/opt/Popcorn-Time/Popcorn-Time'
-    dest: '/usr/local/bin/Popcorn-Time'
+    dest: '/usr/bin/Popcorn-Time'
     state: link
 
 - name: Copy conf file for gnome desktop application
