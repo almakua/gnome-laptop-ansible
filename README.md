@@ -12,5 +12,6 @@ dconf dump / > gconf.txt
 ## TO DO:
 * porting firefox configuration
 * porting application configuration (dropbox mailny, so it download directly after installing it)
-* popcorntime
 * copiare icona di evernote, e cambiare .desktop di tusk
+* copiare configurazioni applicationi, vedere cartella .config nella home
+* capire come cambiare background login screen e renderlo perenne
