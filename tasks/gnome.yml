@@ -29,9 +29,10 @@
 
 - name: Set favourite application
   become_user: marco
-  dconf: key="/org/gnome/shell/favorite-apps" value="['firefox.desktop', 'org.gnome.Nautilus.desktop', 'thunderbird_thunderbird.desktop', 'franz.desktop', 'telegram-desktop_telegramdesktop.desktop', 'slack_slack.desktop', 'vscode_vscode.desktop', 'tusk_tusk.desktop', 'spotify_spotify.desktop']"
+#  dconf: key="/org/gnome/shell/favorite-apps" value="['firefox.desktop', 'org.gnome.Nautilus.desktop', 'thunderbird_thunderbird.desktop', 'franz.desktop', 'telegram-desktop_telegramdesktop.desktop', 'slack_slack.desktop', 'vscode_vscode.desktop', 'tusk_tusk.desktop', 'spotify_spotify.desktop']"
+  dconf: key="/org/gnome/shell/favorite-apps" value="favorite-apps=['firefox.desktop', 'google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'thunderbird_thunderbird.desktop', 'franz.desktop', 'vscode_vscode.desktop', 'tusk_tusk.desktop', 'spotify_spotify.desktop']"
 
-- name: Set correct dock icons' size
+  - name: Set correct dock icons' size
   become_user: marco
   dconf: key="/org/gnome/shell/extensions/dash-to-dock/dash-max-icon-size" value="'32'"
 
