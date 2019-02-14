@@ -28,6 +28,7 @@
       - thunderbird
       - ncdu
       - zeal
+      - remmina
     update_cache: yes
 
 # install packages from internet
