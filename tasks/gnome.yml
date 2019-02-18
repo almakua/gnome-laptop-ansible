@@ -29,8 +29,7 @@
 
 - name: Set favourite application
   become_user: marco
-#  dconf: key="/org/gnome/shell/favorite-apps" value="['firefox.desktop', 'org.gnome.Nautilus.desktop', 'thunderbird_thunderbird.desktop', 'franz.desktop', 'telegram-desktop_telegramdesktop.desktop', 'slack_slack.desktop', 'vscode_vscode.desktop', 'tusk_tusk.desktop', 'spotify_spotify.desktop']"
-  dconf: key="/org/gnome/shell/favorite-apps" value="['firefox.desktop', 'google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'thunderbird_thunderbird.desktop', 'franz.desktop', 'vscode_vscode.desktop', 'tusk_tusk.desktop', 'spotify_spotify.desktop']"
+  dconf: key="/org/gnome/shell/favorite-apps" value="['firefox.desktop', 'google-chrome.desktop', 'org.gnome.Nautilus.desktop', 'mailspring_mailspring.desktop', 'telegram-desktop_telegramdesktop.desktop', 'franz.desktop', 'slack_slack.desktop', 'vscode_vscode.desktop', 'gitkraken.desktop', 'tusk_tusk.desktop', 'spotify_spotify.desktop']"
 
 - name: Set correct dock icons' size
   become_user: marco
@@ -38,13 +37,13 @@
 
 - name: Set dock to span on multiple monitors
   become_user: marco
-  dconf: key="/org/gnome/shell/extensions/dash-to-dock/multi-monitor" value="'true'"
+  dconf: key="/org/gnome/shell/extensions/dash-to-dock/multi-monitor" value="true"
 
 - name: Show date on clock
   become_user: marco
-  dconf: key="/org/gnome/desktop/interface/clock-show-date" value="'true'"
+  dconf: key="/org/gnome/desktop/interface/clock-show-date" value="true"
 
 - name: Show battery percentage
   become_user: marco
-  dconf: key="/org/gnome/desktop/interface/show-battery-percentage" value="'true'"
+  dconf: key="/org/gnome/desktop/interface/show-battery-percentage" value="true"
 
