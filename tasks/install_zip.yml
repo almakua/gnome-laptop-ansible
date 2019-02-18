@@ -29,7 +29,7 @@
 
 - name: Unarchive popcorntime
   unarchive:
-    src: http://mirror03.popcorntime.sh/repo/build/Popcorn-Time-0.3.10-Linux-64.tar.xz
+    src: https://mirror03.popcorntime.sh/repo/build/Popcorn-Time-0.3.10-Linux-64.tar.xz
     dest: /opt/Popcorn-Time/
     remote_src: yes
 
