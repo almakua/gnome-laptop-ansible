@@ -29,6 +29,13 @@
       - ncdu
       - zeal
       - remmina
+      - docker-compose
+      - docker-io
+      - compton
+      - nixnote2
+      - docky
+      - puppet
+      - whois
     update_cache: yes
 
 # install packages from internet
