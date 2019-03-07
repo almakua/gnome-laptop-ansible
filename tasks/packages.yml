@@ -30,7 +30,7 @@
       - zeal
       - remmina
       - docker-compose
-      - docker-io
+      - docker.io
       - compton
       - nixnote2
       - docky
