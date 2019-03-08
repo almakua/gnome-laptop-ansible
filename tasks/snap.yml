@@ -2,8 +2,8 @@
 - name: install snaps via script
   command: bash files/install_snaps.sh {{item}}
   with_items:
-    - gnome-calculator
-    - gnome-calendar
+  #  - gnome-calculator
+  #  - gnome-calendar
     - spotify
     - telegram-desktop
   #  - thunderbird
