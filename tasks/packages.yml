@@ -1,50 +1,50 @@
-  - name: Install packages
-    apt: name={{item}}
-    with_items:
-      - htop
-      - mc
-      - tmux
-      - iotop
-      - iftop
-      - wireshark
-      - terminator
-      - unzip
-      - zip
-      - ubuntu-restricted-extras
-      - vim
-      - timeshift
-      - exfat-fuse
-      - exfat-utils
-      - python3-pip
-      - adb
-      - gnome-tweaks
-      - numix-gtk-theme 
-      - numix-icon-theme*
-      - arc-theme
-      - evince
-      - eog
-      - libreoffice-l10n-it
-      - albert
-      - thunderbird
-      - ncdu
-      - zeal
-      - remmina
-      - docker-compose
-      - docker.io
-      - compton
-      - nixnote2
-      - docky
-      - puppet
-      - whois
-    update_cache: yes
+- name: Install packages
+  apt: name={{item}}
+  with_items:
+    - htop
+    - mc
+    - tmux
+    - iotop
+    - iftop
+    - wireshark
+    - terminator
+    - unzip
+    - zip
+    - ubuntu-restricted-extras
+    - vim
+    - timeshift
+    - exfat-fuse
+    - exfat-utils
+    - python3-pip
+    - adb
+    - gnome-tweaks
+    - numix-gtk-theme 
+    - numix-icon-theme*
+    - arc-theme
+    - evince
+    - eog
+    - libreoffice-l10n-it
+    - albert
+    - thunderbird
+    - ncdu
+    - zeal
+    - remmina
+    - docker-compose
+    - docker.io
+    - compton
+    - nixnote2
+    - docky
+    - puppet
+    - whois
+  update_cache: yes
 
 # install packages from internet
-  - name: Install a .deb package from the internet
-    apt: deb={{item}}
-    with_items: 
-      - https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2019.01.31_amd64.deb
-      - https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-      - https://releases.hashicorp.com/vagrant/2.2.3/vagrant_2.2.3_x86_64.deb
-      - https://steamcdn-a.akamaihd.net/client/installer/steam.deb
-      - https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.24/franz_5.0.0-beta.24_amd64.deb
-      - https://release.axocdn.com/linux/gitkraken-amd64.deb
+- name: Install a .deb package from the internet
+  apt: deb={{item}}
+  with_items: 
+    - https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2019.01.31_amd64.deb
+    - https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+    - https://releases.hashicorp.com/vagrant/2.2.3/vagrant_2.2.3_x86_64.deb
+    - https://steamcdn-a.akamaihd.net/client/installer/steam.deb
+    - https://github.com/meetfranz/franz/releases/download/v5.0.0-beta.24/franz_5.0.0-beta.24_amd64.deb
+    - https://release.axocdn.com/linux/gitkraken-amd64.deb
